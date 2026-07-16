@@ -3,7 +3,7 @@
 Normal text render like paragraph tag 
 in html
 
-for new paragraph we have to make shore there is an empty line between prev and present paragraph
+for new paragraph we have to make sure there is an empty line between prev and present paragraph
 
 for to use line break you have to give 2 white spaces in end of prev line eg:-  
 kill monger
