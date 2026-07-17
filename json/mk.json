@@ -1,0 +1,8 @@
+{
+	"name":"mubashshir",
+	"age":20,
+	"male":true,
+	"hobbies":["cooking","watching movies" ,"learning"],
+	"friends":[{"name":"tylor durden", "age" : 55 , "male" : true},{"name":"narator", "age" : 20 , "male" : true}]
+
+}
