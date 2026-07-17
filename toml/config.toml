@@ -1,0 +1,51 @@
+# toms's obvious minimal language (minimal config file format) (maps unambiguously to a hash table) (syntax same as python mostly) 
+
+# comment
+
+# config file
+
+name = "My Project"
+version = "1.0.0"
+website ="https://www.example.com"
+
+ 
+# table 
+[items]
+numbers = [1,2,3]
+letters = ['a', 'b','c']
+
+#sub table
+
+[items.details]
+updated = true #low case true
+author = "jhon doe"
+timestamp = 2026-07-17
+
+[database]
+type = "sqlite"
+path ="data.db"
+10="k"  #10 will be converted to "10"
+'*'="yoo"
+
+#toml doesnt have none null use ' '
+# encoding = utf-8 in toml files
+# ''   ""   both allowed
+
+#sub keys
+[database2]
+file.type="sqlite"
+file.path="data.db"
+
+[inline_table]
+inline = {name='mubashshir' , age = 30}
+
+#list of table
+
+[[table_group]]
+fruit="apple"
+
+[[table_group]]
+fruit="orange"
+
+[[table_group]]
+fruit="banana"
