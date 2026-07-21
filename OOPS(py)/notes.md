@@ -335,3 +335,5 @@ d = Department(t)           # Department uses that Teacher
 d.show_teacher() ```
 
 50. thats it bye 
+
+51. Composition lefted this concept
