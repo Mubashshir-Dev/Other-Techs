@@ -212,3 +212,126 @@ class Child(Parent):
 ```
 
 ![inheritance representation](inheritance.png)
+
+39. if child class has no constructor then it will use of parent class
+
+40. child class can't access pvt variable of parent class
+
+41. if both(child and parent class) has collision of same name var or method child will use its own one **overriding**
+
+42. polymorphism
+
++ Method Overriding
++ Method Overloading
++ Operator Overloading
+
+43. using super().method() i can call the parent method even when 
+method is overrided
+
+44. super does not work out side of class
+
+![super](super.png)
+
+45. type of inheritance 5
+
++ single level a->b
+
++ multi level  a->b->c->.......
+
++ hirerchial
+```               
+                 c1
+                p/
+                 \
+                 c2   
+```
++ multiple 
+
++ hirerchial
+```               
+                 p1
+                   \
+                    c
+                   /
+                 p2  
+```
++ hybrid (mixture of all above)
+
+![types](types.png)
+
+46. hirerchial
+
+``` py
+class a:
+    pass
+
+class b:
+    pass
+
+class c(a,b):
+    pass
+
+```
+
+order of inheritance matter  class c(a,b): class c(b,a): both can lead to diifrent way 
+lets say both a,b same method then in case of class c(a,b): it will use method of a viceversa  (MRO method resolution order concept)
+
+
+47. method overloading does not work in python as it work in c++ java see
+
+``` py
+
+class Geo:
+    def area(self,r):
+        return r*3.14*r
+
+    def area(self,r,l):
+        return l*b
+
+```
+
+but 
+
+``` py
+
+class Geo:
+    def area(self,r,l=0):
+    if(l==0):
+        return r*3.14*r
+    else:
+        return r*l
+
+
+```
+
+48.  relationship
+
++ has a (aggregation)
+
++ is a  (inheritance)
+
+49. Aggregation is a "has-a" relationship where one object contains another object, but both can exist independently.
+
+``` py
+class Teacher:
+    def __init__(self, name):
+        self.name = name
+
+    def display(self):
+        print(self.name)
+
+
+class Department:
+    def __init__(self, teacher):
+        self.teacher = teacher   # Reference to an existing Teacher
+
+    def show_teacher(self):
+        self.teacher.display()
+
+
+t = Teacher("Mr. Sharma")   # Teacher exists independently
+d = Department(t)           # Department uses that Teacher
+
+d.show_teacher() ```
+
+50. thats it bye 
