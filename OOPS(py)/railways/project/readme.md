@@ -11,9 +11,9 @@ concept used
 + Bash
 
 
-# how to use it for unix based os (linux/max)
-![linux](https://www.flaticon.com/free-icon/linux-platform_13702)
-![mac](https://www.flaticon.com/free-icon/apple_14610914)
+# how to use it for unix based os (linux/mac)
+![linux](image/linux.png)
+![mac](image/mac.png)
 
 ``` bash
 chmod +x unix.sh
@@ -26,7 +26,7 @@ chmod +x unix.sh
 ```
 
 # for windows 
-![windows](https://www.flaticon.com/free-icon/window_3494371)
+![windows](image/win.png)
 
 ``` bat
 .\window.bat
