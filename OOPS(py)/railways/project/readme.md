@@ -10,10 +10,20 @@ concept used
 
 + Bash
 
+# how to get api and place api
+
+[go to this link create account and copy the api key and paste it in .env file](https://railradar.in/)
+
+.env is a hidden file first toggle on show hidden files (ctrl+H) then open it in text editor and paste api string in front of API variable link this
+
+```
+API = "sdhauhuawhfhasfhawisihesi"
+```
+
+![screenshot](image/paste.png)
+
 
 # how to use it for unix based os (linux/mac)
-![linux](image/linux.png)
-![mac](image/mac.png)
 
 ``` bash
 chmod +x unix.sh
@@ -26,9 +36,10 @@ chmod +x unix.sh
 ```
 
 # for windows 
-![windows](image/win.png)
 
 ``` bat
 .\window.bat
 
 ```
+
+
